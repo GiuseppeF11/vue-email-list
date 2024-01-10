@@ -22,9 +22,9 @@
 
 <body>
         <div id="app">
-                <ul>
-                        <li v-for="email in emails">
-                                {{email}}
+                <ul v-if="emails.length == 10"> <!-- Stampiamo la lista solo quando ha lunghezza 10 -->
+                        <li v-for="email in emails"> <!-- Cicla le email dentro la lista emails-->
+                                {{email}} <!-- Stampa l' email -->
                         </li>
                 </ul>
         </div>
